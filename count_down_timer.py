@@ -9,5 +9,5 @@ def count_down(input):
     
     print("Count down completed")
     
-count_down(40)
+
     
