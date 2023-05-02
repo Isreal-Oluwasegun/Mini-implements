@@ -1,11 +1,13 @@
+# Bubble sort implementation with python
 def bubble_sort(array):
-    n = len(array) 
-    for i in range(n):
+    array_length = len(array) 
+    
+    # Loop through the array
+    for i in range(array_length):
         sorted = True
-        for j in range(n-1):
-            if array[j] > array[j+1]:
-                array[j], array[j+1] = array[j+1], array[j]
+        for j in range(array_length-1):
+            if array[j] > array[j+1]: 
+                array[j], array[j+1] = array[j+1], array[j] # swap items if not in oreder
                 sorted = False       
     return array
 
-print(bubble_sort([0, 1, 2, 3, 6, 7, 9, 21]))
